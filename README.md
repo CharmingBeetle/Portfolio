@@ -40,7 +40,7 @@ Portfolio/
 
 ## 🚀 Deployment
 
-This portfolio is deployed on Netlify with automatic form handling for the contact form.
+This portfolio was made as part of the Udemy course Angela Yu's Complete Web Development Bootcamp. It is deployed on Netlify with automatic form handling for the contact form.
 
 ---
 

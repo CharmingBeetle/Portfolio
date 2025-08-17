@@ -53,7 +53,9 @@ html, body {
 }
 
 .hero h1 { color: #fff; }
-.hero .lead { color: rgba(255, 255, 255, 0.92); }
+.hero .lead { color: rgba(255, 255, 255, 0.92); 
+font-size: medium;
+}
 
 .hero-img { border: 6px solid rgba(255, 255, 255, 0.35); }
 
