@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+:root {
+  /* Option 4 palette */
+  --c-primary: #3D365C;  /* dark purple */
+  --c-secondary: #7C4585;/* purple */
+  --c-accent: #C95792;   /* pink */
+  --c-surface: #F8B55F;  /* yellow */
+  --c-text: #2C3E50;     /* dark blue-gray for text */
+  --c-muted: #7F8C8D;    /* muted gray */
+
+  /* Gradient stops for hero */
+  --g1: #3D365C;
+  --g2: #7C4585;
+  --g3: #C95792;
+  --g4: #F8B55F;
+
+  /* Derived */
+  --radius: 14px;
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+html, body {
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--c-text);
+  background: var(--c-primary);
+}
+
+/* Hero animated gradient */
+.gradient-background {
+  position: relative;
+  background: linear-gradient(120deg, var(--g1), var(--g2), var(--g4));
+  background-size: 300% 300%;
+  animation: gradient-shift 22s ease infinite;
+  color: #fff;
+}
+
+/* Darken light portions for readability */
+.gradient-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  z-index: 0;
+}
+.gradient-background > * { position: relative; z-index: 1; }
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero h1 { color: #fff; }
+.hero .lead { color: rgba(255, 255, 255, 0.92); }
+
+.hero-img { border: 6px solid rgba(255, 255, 255, 0.35); }
+
+/* Sections */
+.section-pad { padding: 72px 0; }
+.bg-surface { background: var(--c-surface); }
+.section-title { font-weight: 700; margin-bottom: 1rem; }
+
+/* CV and About sections with yellow background */
+#cv, #about {
+  background: var(--c-surface) !important;
+}
+
+/* Contact section text color for readability */
+#contact {
+  color: #ffffff;
+}
+
+#contact h2,
+#contact p,
+#contact label {
+  color: #ffffff;
+}
+
+/* Cards */
+.soft-card {
+  border: 1px solid rgba(61, 54, 92, 0.15);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  background: #ffffff;
+}
+
+.project-card {
+  border: none;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  background: #ffffff;
+}
+.sb {
+  object-fit: cover;
+  object-position: center !important;
+  height: 180px;
+}
+
+.project-card .card-img-top {
+  object-fit: cover;
+  object-position: top;
+  height: 180px;
+}
+
+/* Buttons — align with palette */
+.btn-primary {
+  --bs-btn-bg: var(--c-accent);
+  --bs-btn-border-color: var(--c-accent);
+  --bs-btn-hover-bg: #B5477F; /* darker pink */
+  --bs-btn-hover-border-color: #B5477F;
+  --bs-btn-active-bg: #A1376F;
+  --bs-btn-active-border-color: #A1376F;
+  --bs-btn-color: #fff;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--c-accent);
+  --bs-btn-border-color: var(--c-accent);
+  --bs-btn-hover-bg: var(--c-accent);
+  --bs-btn-hover-border-color: var(--c-accent);
+  --bs-btn-hover-color: #fff;
+}
+
+/* Improve contrast for outline button on gradient hero */
+.gradient-background .btn-outline-primary {
+  --bs-btn-color: #ffffff;
+  --bs-btn-border-color: #ffffff;
+  --bs-btn-hover-bg: #ffffff;
+  --bs-btn-hover-border-color: #ffffff;
+  --bs-btn-hover-color: var(--c-accent);
+}
+
+/* Navbar */
+.navbar-light .navbar-brand { color: var(--c-text); }
+.navbar-light .nav-link { color: var(--c-text); }
+.navbar-light .nav-link:hover { color: var(--c-accent); }
+.navbar-light { background:white !important; }
+
+/* Utilities */
+.rounded-4 { border-radius: var(--radius) !important; }
+.shadow-sm { box-shadow: var(--shadow-soft) !important; }
+
+/* Improve default list spacing */
+ul { padding-left: 1.1rem; }
+li { margin-bottom: .35rem; }

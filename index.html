@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nina Thomas — Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-body sticky-top border-bottom"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">Dr. Nina Thomas</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- HERO SECTION
+    A hero section that provides a brief introduction to you and your background. -->
+    <section id="home" class="hero gradient-background py-5">
+      <div class="container col-xxl-9 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
+          <div class="col-10 col-sm-8 col-lg-6 text-center">
+            <img
+              src="./assets/nina-ghibli.png"
+              class="hero-img d-block mx-lg-auto img-fluid rounded-4 shadow-sm"
+              alt="Portrait of Nina Thomas"
+              width="420"
+              height="420"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Hi, I’m Nina 👋🏾</h1>
+            <p class="lead mb-4">
+              I’m a junior software developer with a background in healthcare. I
+              work with JavaScript, Python, TypeScript, React, and Node.js, with
+              experience deploying apps on AWS. I’ve integrated AI to enhance
+              user experience, applying emerging technologies for practical use.
+              I bring problem-solving skills, adaptability, and a focus on
+              building software that makes a real impact. Explore my projects
+              below, and feel free to reach out.
+            </p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a
+                href="./assets/Nina Thomas CV googledoc.pdf"
+                class="btn btn-primary btn-lg px-4"
+                target="_blank"
+                rel="noopener"
+                >Download CV</a
+              >
+              <a
+                href="https://github.com/CharmingBeetle"
+                class="btn btn-outline-primary btn-lg px-4"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME PAGE
+    A resume page that lists your education, work experience, skills, and other relevant information (you can link to Capstone project 1). -->
+    <section id="cv" class="section-pad bg-surface">
+      <div class="container">
+        <div class="row justify-content-between align-items-start g-5">
+          <div class="col-12">
+            <h2 class="section-title">Curriculum Vitae</h2>
+          </div>
+          <div class="col-lg-6">
+            <div class="card soft-card h-100">
+              <div class="card-body">
+                <h3 class="h4 mb-3">Education</h3>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-3">
+                    <h4 class="h6 mb-1">University of Sheffield</h4>
+                    <div class="text-muted small">2005 – 2010</div>
+                    <div>Bachelor of Dental Surgery</div>
+                  </li>
+                  <li>
+                    <h4 class="h6 mb-1">Queen's University</h4>
+                    <div class="text-muted small">1998 – 2003</div>
+                    <div>Bachelor of Science (Hons)</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card soft-card h-100">
+              <div class="card-body">
+                <h3 class="h4 mb-3">Work Experience</h3>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-4">
+                    <h4 class="h6 mb-1">Locum Dental Officer</h4>
+                    <div class="text-muted small">Oct 2022 – Present • MOD</div>
+                    <div>Providing dental care to military personnel.</div>
+                  </li>
+                  <li class="mb-4">
+                    <h4 class="h6 mb-1">NHS Associate Dentist</h4>
+                    <div class="text-muted small">Sep 2010 – Sep 2022</div>
+                    <div>
+                      Delivered high-quality patient care in a busy NHS
+                      practice.
+                    </div>
+                  </li>
+                  <li>
+                    <h4 class="h6 mb-1">Freelance Photographer</h4>
+                    <div class="text-muted small">Aug 2018 – Sep 2022</div>
+                    <div>Specialized in portrait and wedding photography.</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="card soft-card h-100">
+              <div class="card-body">
+                <h3 class="h4 mb-3">Professional Development</h3>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-3">
+                    <h4 class="h6 mb-1">Northcoders | JavaScript</h4>
+                    <div class="text-muted small">Jan 2025 - Apr 2025</div>
+                    <div>
+                      Software Engineer Bootcamp (Level 3 equivalent). Pair
+                      programming and daily coding katas in modern JavaScript.
+                    </div>
+                  </li>
+                  <li class="mb-3">
+                    <h4 class="h6 mb-1">Codecademy | Java</h4>
+                    <div class="text-muted small">Mar 2024</div>
+                    <div>
+                      Completed "Learn Java" online course with certificate
+                      (Beginner level).
+                    </div>
+                  </li>
+                  <li class="mb-3">
+                    <h4 class="h6 mb-1">CFG Challenge | C++</h4>
+                    <div class="text-muted small">Sep 2024</div>
+                    <div>
+                      Caesar cipher encryption, vulnerability detection (buffer
+                      overflow, integer overflow), and code correction.
+                    </div>
+                  </li>
+                  <li class="mb-3">
+                    <h4 class="h6 mb-1">CFG Kickstarter | JavaScript</h4>
+                    <div class="text-muted small">Aug 2024</div>
+                    <div>
+                      JavaScript fundamentals, DOM manipulation, HTML, and CSS.
+                    </div>
+                  </li>
+                  <li class="mb-3">
+                    <h4 class="h6 mb-1">CFG Kickstarter | Python</h4>
+                    <div class="text-muted small">Jun 2023</div>
+                    <div>
+                      Python fundamentals while building a small game app as a
+                      team.
+                    </div>
+                  </li>
+                  <li class="mb-3">
+                    <h4 class="h6 mb-1">CFG Massive Open Online Courses</h4>
+                    <div class="text-muted small">Various</div>
+                    <div>
+                      C#, Web Development, Data (SQL), iOS Development, Agile,
+                      Scrum, Cloud & Deployment, Git, GitHub, Machine Learning,
+                      Career Development, Web App Security, DevOps, C++, LLMs &
+                      Prompt Engineering.
+                    </div>
+                  </li>
+                  <li>
+                    <h4 class="h6 mb-1">Replit | 100 Days of Code Python</h4>
+                    <div class="text-muted small">In Progress</div>
+                    <div>
+                      Character generator, math games, tip calculator, rock
+                      paper scissors, gradebook builder, and more using various
+                      libraries.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="card soft-card">
+              <div class="card-body">
+                <h3 class="h4 mb-4">Technical Skills</h3>
+                <div class="row g-4">
+                  <div class="col-md-6 col-lg-3">
+                    <h4 class="h6 mb-3">Frontend Development</h4>
+                    <ul class="mb-0">
+                      <li>HTML5 & CSS3</li>
+                      <li>JavaScript (ES6+)</li>
+                      <li>React.js</li>
+                      <li>Bootstrap 5</li>
+                      <li>Responsive Design</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <h4 class="h6 mb-3">Backend Development</h4>
+                    <ul class="mb-0">
+                      <li>Node.js</li>
+                      <li>Express.js</li>
+                      <li>RESTful APIs</li>
+                      <li>PostgreSQL</li>
+                      <li>MySQL</li>
+                      <li>Java</li>
+                      <li>Python</li>
+                      <li>C++</li>
+                      <li>TDD</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <h4 class="h6 mb-3">Tools & Platforms</h4>
+                    <ul class="mb-0">
+                      <li>VS Code</li>
+                      <li>Netlify</li>
+                      <li>AWS</li>
+                      <li>Insomnia/Postman</li>
+                      <li>Chrome DevTools</li>
+                      <li>Git & GitHub</li>
+                      <li>CI/CD</li>
+                      <li>Docker</li>
+                      <li>Jest</li>
+                      <li>Supertest</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <h4 class="h6 mb-3">Soft Skills</h4>
+                    <ul class="mb-0">
+                      <li>Problem Solving</li>
+                      <li>Attention to Detail</li>
+                      <li>Team Collaboration</li>
+                      <li>Time Management</li>
+                      <li>Continuous Learning</li>
+                      <li>Pair Programming</li>
+                      <li>Agile</li>
+                      <li>Scrum</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PROJECTS
+    A section that showcases any projects or work that you have done in the past. -->
+
+    <section id="projects" class="section-pad">
+      <div class="container">
+        <h2 class="section-title mb-4">Projects</h2>
+        <div class="row g-4">
+          <!-- STUDY BUDDAI -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100">
+              <a href="https://main.d2kavmrnv3biu0.amplifyapp.com/">
+                <img
+                  src="./assets/SB- screenshot1.png"
+                  class="card-img-top sb"
+                  alt="study buddy"
+                />
+              </a>
+              <div class="card-body">
+                <h3 class="h5 card-title mb-2">Study BuddAI</h3>
+                <p class="card-text">
+                  An AI-powered study buddy that helps you learn and stay
+                  motivated.
+                </p>
+                <div class="d-flex flex-wrap gap-2 small">
+                  <span class="badge text-bg-light">JavaScript</span>
+                  <span class="badge text-bg-light">Node.js</span>
+                  <span class="badge text-bg-light">Express</span>
+                  <span class="badge text-bg-light">MySQL</span>
+                  <span class="badge text-bg-light">React</span>
+                  <span class="badge text-bg-light">Bootstrap</span>
+                  <span class="badge text-bg-light">HTML</span>
+                  <span class="badge text-bg-light">CSS</span>
+                  <span class="badge text-bg-light">AWS Amplify</span>
+                  <span class="badge text-bg-light">AWS EC2</span>
+                  <span class="badge text-bg-light">REST API</span>
+                  <span class="badge text-bg-light">Git</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- THOUGHT BUBBLE -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100">
+              <a href="http://thethoughtbubble.netlify.app">
+                <img
+                  src="./assets/thought bubble.png"
+                  class="card-img-top"
+                  alt="thought bubble"
+                />
+              </a>
+              <div class="card-body">
+                <h3 class="h5 card-title mb-2">Thought Bubble</h3>
+                <p class="card-text">
+                  A Reddit-style news aggregator that allows users to post, like and discuss
+                  news articles.
+                </p>
+                <div class="d-flex flex-wrap gap-2 small">
+                  <span class="badge text-bg-light">JavaScript</span>
+                  <span class="badge text-bg-light">Express</span>
+                  <span class="badge text-bg-light">Node.js</span>
+                  <span class="badge text-bg-light">React</span>
+                  <span class="badge text-bg-light">PostgreSQL</span>
+                  <span class="badge text-bg-light">HTML</span>
+                  <span class="badge text-bg-light">CSS</span>
+                  <span class="badge text-bg-light">Bootstrap</span>
+                  <span class="badge text-bg-light">Render</span>
+                  <span class="badge text-bg-light">Supabase</span>
+                  <span class="badge text-bg-light">Netlify</span>
+                  <span class="badge text-bg-light">REST API</span>
+                  <span class="badge text-bg-light">Git</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--MISS CAPITAL -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100">
+              <a href="http://misscapital.netlify.app">
+                <img
+                  src="./assets/miss capital.png"
+                  class="card-img-top"
+                  alt="miss capital"
+                />
+              </a>
+              <div class="card-body">
+                <h3 class="h5 card-title mb-2">Miss Capital</h3>
+                <p class="card-text">
+                  A budget planner app that helps users manage their finances
+                  and track their spending.
+                </p>
+                <div class="d-flex flex-wrap gap-2 small">
+                  <span class="badge text-bg-light">JavaScript</span>
+                  <span class="badge text-bg-light">HTML</span>
+                  <span class="badge text-bg-light">CSS</span>
+                  <span class="badge text-bg-light">Netlify</span>
+                  <span class="badge text-bg-light">DOM Manipulation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TREASURE HUNT -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100">
+              <a href="http://citytreasurehunt.netlify.app"
+                ><img
+                  src="./assets/treasure hunt.png"
+                  class="card-img-top"
+                  alt="treasure hunt project"
+              /></a>
+              <div class="card-body">
+                <h3 class="h5 card-title mb-2">Treasure Hunt</h3>
+                <p class="card-text">
+                  An interactive event website to book tickets for a local
+                  treasure hunt.
+                </p>
+                <div class="d-flex flex-wrap gap-2 small">
+                  <span class="badge text-bg-light">JavaScript</span>
+                  <span class="badge text-bg-light">HTML</span>
+                  <span class="badge text-bg-light">CSS</span>
+                  <span class="badge text-bg-light">Netlify</span>
+                  <span class="badge text-bg-light">Map Integration</span>
+                  <span class="badge text-bg-light">Interactive UI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- POKERMON TOP TRUMPS -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100">
+              <a
+                href="https://github.com/CharmingBeetle/CFGGroupProject_PokemonJune2023/blob/main/README.md"
+              >
+                <img
+                  src="./assets/pokemon.png"
+                  class="card-img-top"
+                  alt="code base"
+              /></a>
+              <div class="card-body">
+                <h3 class="h5 card-title mb-2">Pokemon Top Trumps</h3>
+                <p class="card-text">
+                  A Python-based game featuring Pokemon with
+                  different stats, implementing Top Trumps gameplay
+                  mechanics.
+                </p>
+                <div class="d-flex flex-wrap gap-2 small">
+                  <span class="badge text-bg-light">Python</span>
+                  <span class="badge text-bg-light">Data Structures</span>
+                  <span class="badge text-bg-light">Libraries</span>
+                  <span class="badge text-bg-light">Console Application</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME
+    An about me section that provides additional information about you and your interests. -->
+    <section id="about" class="section-pad bg-surface">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-md-5 text-center">
+            <img
+              src="./assets/Profile Photo.png"
+              class="img-fluid rounded-4 shadow-sm"
+              alt="Portrait of Nina"
+              width="360"
+              height="360"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-md-7">
+            <h2 class="section-title">About Me</h2>
+            <p>
+              I transitioned into tech after dentistry, completing an intensive
+              full-stack bootcamp. I specialize in JavaScript, TypeScript,
+              React, Node.js, and MySQL, with experience deploying apps to AWS
+              and working with TDD, agile workflows, and pair programming. I’m
+              building a full-stack app to sharpen my Python skills and explore
+              AI/LLMs. I love learning new tools and creating products that
+              deliver real value.
+            </p>
+            <p class="mb-0">
+              When I’m not coding, you’ll find me exploring planning a trip,
+              capturing moments with my camera, or learning a new (human)
+              language!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT ME
+    A contact me section that includes information for users to get in touch with you. -->
+
+    <section id="contact" class="section-pad">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="mb-3">
+              Interested in working together? I’d love to
+              hear from you.
+            </p>
+            <div class="d-flex flex-column gap-2">
+              <a class="btn btn-primary btn-lg" href="mailto:nina.thomas.dev@gmail.com"
+                >Email Me</a
+              >
+              <a
+                class="btn btn-outline-primary"
+                href="./assets/Nina Thomas CV googledoc.pdf"
+                target="_blank"
+                rel="noopener"
+                >View CV</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card soft-card">
+              <div class="card-body">
+                <form name="contact" method="POST" data-netlify="true" class="row g-3">
+                  <input type="hidden" name="form-name" value="contact" />
+                  <div class="col-md-6">
+                    <label class="form-label" for="name">Name</label>
+                    <input
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      type="text"
+                      placeholder="Your name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="email">Email</label>
+                    <input
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      type="email"
+                      placeholder="you@example.com"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="form-control"
+                      rows="4"
+                      placeholder="Your message"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  
+  </body>
+</html>
