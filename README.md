@@ -3,7 +3,7 @@
 A personal portfolio website showcasing my projects, skills, and experience as a junior software developer.
 
 ## Hosted
-[https://portfolio-dev-nina.netlify.app/](https://portfolio-dev-nina.netlify.app/)
+[https://charmingbeetleportfolio.netlify.app/](https://charmingbeetleportfolio.netlify.app/)
 
 ## 🚀 Features
 
