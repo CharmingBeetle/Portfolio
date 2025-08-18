@@ -64,6 +64,8 @@ font-size: medium;
 .bg-surface { background: var(--c-surface); }
 .section-title { font-weight: 700; margin-bottom: 1rem; }
 
+.project-title { color: #fff; }
+
 /* CV and About sections with yellow background */
 #cv, #about {
   background: var(--c-surface) !important;
