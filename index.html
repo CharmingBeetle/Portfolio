@@ -11,7 +11,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-
   </head>
   <body>
     <!-- NAVBAR -->
@@ -289,6 +288,34 @@
       <div class="container">
         <h2 class="section-title project-title mb-4">Projects</h2>
         <div class="row g-4">
+          <!-- ASSEMBLÉ -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100">
+              <a href="https://assemble-gallery-curator.netlify.app/"> </a>
+              <img
+                src="./assets/assemble-screenshot.png"
+                class="card-img-top"
+                alt="assemble"
+              />
+              <div class="card-body">
+                <h3 class="h5 card-title mb-2">Assemblé</h3>
+                <p class="card-text">
+                  A gallery curator frontend web app using Met and Harvard APIs. Allows users to curate and share their own
+                  gallery using a powerful search engine.
+                </p>
+                <div class="d-flex flex-wrap gap-2 small">
+                  <span class="badge text-bg-light">TypeScript</span>
+                  <span class="badge text-bg-light">Node.js</span>
+                  <span class="badge text-bg-light">React</span>
+                  <span class="badge text-bg-light">Tailwind CSS</span>
+                  <span class="badge text-bg-light">HTML</span>
+                  <span class="badge text-bg-light">CSS</span>
+                  <span class="badge text-bg-light">Netlify</span>
+                  <span class="badge text-bg-light">Lighthouse</span>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- STUDY BUDDAI -->
           <div class="col-md-6 col-lg-4">
             <div class="card project-card h-100">
@@ -306,7 +333,7 @@
                   motivated.
                 </p>
                 <div class="d-flex flex-wrap gap-2 small">
-                  <span class="badge text-bg-light">JavaScript</span>
+                  <span class="badge text-bg-light">TypeScript</span>
                   <span class="badge text-bg-light">Node.js</span>
                   <span class="badge text-bg-light">Express</span>
                   <span class="badge text-bg-light">MySQL</span>
@@ -336,8 +363,8 @@
               <div class="card-body">
                 <h3 class="h5 card-title mb-2">Thought Bubble</h3>
                 <p class="card-text">
-                  A Reddit-style news aggregator that allows users to post, like and discuss
-                  news articles.
+                  A Reddit-style news aggregator that allows users to post, like
+                  and discuss news articles.
                 </p>
                 <div class="d-flex flex-wrap gap-2 small">
                   <span class="badge text-bg-light">JavaScript</span>
@@ -425,9 +452,8 @@
               <div class="card-body">
                 <h3 class="h5 card-title mb-2">Pokemon Top Trumps</h3>
                 <p class="card-text">
-                  A Python-based game featuring Pokemon with
-                  different stats, implementing Top Trumps gameplay
-                  mechanics.
+                  A Python-based game featuring Pokemon with different stats,
+                  implementing Top Trumps gameplay mechanics.
                 </p>
                 <div class="d-flex flex-wrap gap-2 small">
                   <span class="badge text-bg-light">Python</span>
@@ -461,17 +487,16 @@
             <h2 class="section-title">About Me</h2>
             <p>
               I transitioned into tech after dentistry, completing an intensive
-              full-stack bootcamp. I specialize in JavaScript, TypeScript,
-              React, Node.js, and MySQL, with experience deploying apps to AWS
+              full-stack bootcamp. I have experience in JavaScript, TypeScript, Python,
+              React, Node.js, and PostgreSQL, with experience deploying apps to AWS
               and working with TDD, agile workflows, and pair programming. I’m
               building a full-stack app to sharpen my Python skills and explore
               AI/LLMs. I love learning new tools and creating products that
               deliver real value.
             </p>
             <p class="mb-0">
-              When I’m not coding, you’ll find me planning a trip,
-              capturing moments with my camera, or learning a new (human)
-              language!
+              When I’m not coding, you’ll find me planning a trip, capturing
+              moments with my camera, or learning a new (human) language!
             </p>
           </div>
         </div>
@@ -487,11 +512,12 @@
           <div class="col-lg-6">
             <h2 class="section-title">Get in Touch</h2>
             <p class="mb-3">
-              Interested in working together? I’d love to
-              hear from you.
+              Interested in working together? I’d love to hear from you.
             </p>
             <div class="d-flex flex-column gap-2">
-              <a class="btn btn-primary btn-lg" href="mailto:nina.thomas.dev@gmail.com"
+              <a
+                class="btn btn-primary btn-lg"
+                href="mailto:nina.thomas.dev@gmail.com"
                 >Email Me</a
               >
               <a
@@ -508,15 +534,18 @@
                 rel="noopener"
                 >LinkedIn</a
               >
-            
-              
             </div>
           </div>
-       
+
           <div class="col-lg-6">
             <div class="card soft-card">
               <div class="card-body">
-                <form name="contact" method="POST" netlify="true" class="row g-3">
+                <form
+                  name="contact"
+                  method="POST"
+                  netlify="true"
+                  class="row g-3"
+                >
                   <input type="hidden" name="form-name" value="contact" />
                   <div class="col-md-6">
                     <label class="form-label" for="name">Name</label>
@@ -569,6 +598,5 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-  
   </body>
 </html>
