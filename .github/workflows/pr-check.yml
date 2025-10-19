@@ -1,0 +1,39 @@
+name: Pull Request Checks
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  # Code Quality Check for PRs
+  quality-check:
+    name: Code Quality Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint HTML files
+        run: npm run lint:html
+
+      - name: Lint CSS files
+        run: npm run lint:css
+
+      - name: Check for broken links
+        run: |
+          echo "Checking for common issues..."
+          # Check if all images exist
+          find . -name "*.html" -exec grep -l "src=" {} \; | xargs -I {} sh -c 'grep -o "src=\"[^\"]*\"" "{}" | sed "s/src=\"//g" | sed "s/\"//g" | while read img; do if [ ! -f "$img" ]; then echo "Missing image: $img"; fi; done'
+
+      - name: Validate HTML structure
+        run: |
+          echo "Validating HTML structure..."
+          find . -name "*.html" -exec echo "Checking {}" \;

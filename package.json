@@ -1,0 +1,36 @@
+{
+  "name": "nina-thomas-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Nina Thomas",
+  "main": "index.html",
+  "scripts": {
+    "lint:html": "htmlhint \"**/*.html\"",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint": "npm run lint:html && npm run lint:css",
+    "build": "echo 'Static site - no build step required'",
+    "deploy": "echo 'Deployment handled by GitHub Actions'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharmingBeetle/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "static",
+    "html",
+    "css",
+    "bootstrap"
+  ],
+  "author": "Nina Thomas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CharmingBeetle/portfolio/issues"
+  },
+  "homepage": "https://charmingbeetleportfolio.netlify.app/",
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0"
+  }
+}
